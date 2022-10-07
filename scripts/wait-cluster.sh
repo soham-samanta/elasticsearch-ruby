@@ -13,13 +13,6 @@ do
   if [ ${attempt_counter} -eq ${max_attempts} ];then
     echo "\nCouldn't connect to Elasticsearch"
     read -p "Enter file name : " filename
-    while read -n1 character
-    do 
-    echo $character
-    done < $filename
-        exit 1
-      fi
-
   printf '.'
   attempt_counter=$(($attempt_counter+1))
   sleep 5
