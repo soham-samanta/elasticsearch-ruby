@@ -89,7 +89,7 @@ To trace requests and responses in the Curl format, set the `trace` argument:
 Elasticsearch::Client.new(trace: true)
 ```
 
-You can customize the default logger or tracer:
+Now you can customize the default logger or tracer:
 
 [source,ruby]
 ------------------------------------
