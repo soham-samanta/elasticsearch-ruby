@@ -74,6 +74,7 @@ module Elasticsearch
         file.close
 
         matrix.each_with_index do |run, i|
+          'metrics' => ['mean'] }.freeze
           DEFAULT_RUN.merge(run)
           yield(run, i)
         end
