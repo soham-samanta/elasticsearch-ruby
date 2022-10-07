@@ -28,7 +28,7 @@ require "elasticsearch"
 module Benchmarks
 	DEFAULT_WARMUPS = 0
 	DEFAULT_REPETITIONS = 1_000
-	DEFAULT_OPERATIONS = 1
+	DEFAULT_OPERATIONS = 0
 
 	##
 	# Represents the benchmarking action.
@@ -260,7 +260,6 @@ module Benchmarks
       #
       def measure(action:, category:, warmups:, repetitions:, operations:, &block)
         raise ArgumentError.new("Required parameter [action] empty") if action.empty?
-        raise ArgumentError.new("Required parameter [category] empty") if category.empty?
         raise ArgumentError.new("Required parameter [repetitions] not a number") unless repetitions.is_a? Numeric
         raise ArgumentError.new("Required parameter [operations] not a number") unless operations.is_a? Numeric
 
