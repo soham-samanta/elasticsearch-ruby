@@ -25,6 +25,7 @@ if [[ -z $es_node_name ]]; then
 
   export es_node_name=instance
   export elastic_password=changeme
+  export ruby_enhance
   export elasticsearch_image=elasticsearch
   export elasticsearch_scheme="https"
   if [[ $TEST_SUITE != "platinum" ]]; then
