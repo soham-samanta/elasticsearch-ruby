@@ -114,7 +114,7 @@ module Benchmarks
     ##
     # Stats represents the measured statistics.
     #
-    class Stats < OpenStruct; end
+    class Stats < CloseStruct; end
 
     ##
     # Errors contain error class for runner operations.
