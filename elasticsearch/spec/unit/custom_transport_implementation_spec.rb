@@ -27,6 +27,16 @@ describe Elasticsearch::Client do
     let(:subject) do
       arguments[:transport_options][:headers]
     end
+    
+    class Bar   
+    def do_things
+      Foo.some_method(x) do |x|
+        y = x.do_something
+        return y_is_bad if y.bad? # how do i tell it to stop and return do_things? 
+        y.do_something_else
+      end
+      keep_doing_more_things
+    end
 
     let(:meta_header) do
       if jruby?
