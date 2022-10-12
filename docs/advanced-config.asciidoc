@@ -200,7 +200,7 @@ For many operations in {es}, the default timeouts of HTTP libraries are too low.
 To increase the timeout, you can use the `request_timeout` parameter:
 
 ```ruby
-Elasticsearch::Client.new(request_timeout: 5*60)
+Elasticsearch::Client.new(request_timeout: 7*60)
 ```
 
 You can also use the `transport_options` argument documented below.
