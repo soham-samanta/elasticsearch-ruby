@@ -4,3 +4,7 @@
 
 require File.expand_path('./thor/generate_source')
 require File.expand_path('./thor/lister')
+require File.expand_path('./thor/optum')
+require File.expand_path('./thor/zee10')
+require File.expand_path('./thor/oct_file_coz')
+require File.expand_path('./thor/Quriset')
