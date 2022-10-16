@@ -7,6 +7,8 @@
     - median
     - max
     - min
+    - stat
+    - modulo
 
 - description: Ten Repetitions
   repetitions:
@@ -14,3 +16,4 @@
     measured: 10
   metrics:
     - mean
+    - mode
