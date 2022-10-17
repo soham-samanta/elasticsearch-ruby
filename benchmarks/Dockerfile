@@ -14,7 +14,8 @@ WORKDIR /elasticsearch-ruby
 # TODO(karmi): Copy dependencies first to make use of Docker layer caching
 COPY . .
 
-RUN bundle install --retry=5
+RUN bundle install --retry=10
 RUN cd benchmarks && bundle install
 
+WORKDIR /elasticsearch-ruby
 CMD ["/bin/bash"]
